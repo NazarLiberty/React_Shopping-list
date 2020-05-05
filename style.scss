@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-color: #3b3f45;
+}
+.shop-header{
+    width: 100vw;
+    background-color: #4a4f56;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+        color: #eb7e7f;
+        font-size: 1.1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 100%;
+}
+.shop-list_block{
+    margin-top: 30px;
+    padding: 0;
+    list-style-type: none;
+}
+.shop-list_item{
+   margin: auto;
+    transition: ease .5s;
+    border-top: 2px transparent solid;
+        border-bottom: 2px transparent solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 120%;
+    width: 700px;
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #7a7593; 
+    color: white;
+    &--active{
+        text-decoration: line-through;
+    }
+    & input{
+        margin-left: 10px;
+        margin-right: 10px
+    } 
+    &:hover{
+        cursor: pointer;
+        filter: hue-rotate(40deg);
+        border-top: 2px white solid;
+        border-bottom: 2px white solid;
+    }
+   
+}
+.checkbox{
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 18px;
+    border: 1px rgb(46, 41, 41)solid;
+    border-radius: 20px;
+    height: 18px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.74);
+    &__icon{
+        transition: ease .6s;
+        object-fit: cover;
+        max-width: 100%;
+        position: absolute;
+        bottom: -20px;
+        &--checked{
+            bottom: 0px
+        }
+    }
+    
+}
+
+li:nth-child(odd){
+    background-color: #88839e;
+ 
+}
+.button{
+    transition: .4s all ease-in;
+    border: 0;
+    margin-top: 30px;
+    height: 70px;
+    background-color: #4a4f56;
+    width: 700px;
+    color: #eb7e7f;
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover{
+        color: black;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.459);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
